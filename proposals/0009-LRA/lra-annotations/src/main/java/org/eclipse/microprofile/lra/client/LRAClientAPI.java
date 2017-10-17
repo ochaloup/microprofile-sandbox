@@ -31,6 +31,8 @@ import java.util.concurrent.TimeUnit;
 
 public interface LRAClientAPI {
 
+    public String LRA_HTTP_HEADER = "Long-Running-Action";
+
     /**
      * Start a new LRA
      *
