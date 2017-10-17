@@ -85,7 +85,7 @@ public interface LRAClientAPI {
      * 
      * @throws GenericLRAException on error
      */
-    List<LRAStatus> getActiveLRAs() throws GenericLRAException;
+    List<LRARecord> getActiveLRAs() throws GenericLRAException;
 
     /**
      * Returns all LRAs
@@ -95,7 +95,7 @@ public interface LRAClientAPI {
      * @return List<LRA>
      * @throws GenericLRAException on error
      */
-    List<LRAStatus> getAllLRAs() throws GenericLRAException;
+    List<LRARecord> getAllLRAs() throws GenericLRAException;
 
     /**
      * List recovering Long Running Actions
@@ -106,7 +106,7 @@ public interface LRAClientAPI {
      *
      * @throws GenericLRAException on error
      */
-    List<LRAStatus> getRecoveringLRAs() throws GenericLRAException;
+    List<LRARecord> getRecoveringLRAs() throws GenericLRAException;
 
     /**
      * Lookup the status of an LRA
